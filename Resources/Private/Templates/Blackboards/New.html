@@ -1,0 +1,52 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+        {namespace h=Wills\WillsBlackboards\ViewHelpers}
+      <section id="section-main-upper">
+            <div class="row {f:if(condition:contentObjectData.layout,then:'row--bread')} row--small frame frame-default frame-type-form_formframework frame-layout-0">
+                  <div class="center-wrapper">
+                        <f:form.validationResults>
+                      <f:if condition="{validationResults.flattenedErrors}">
+                        <ul class="errors">
+                          <f:for each="{validationResults.flattenedErrors}" as="errors" key="propertyPath">
+                            <li>{propertyPath}
+                              <ul>
+                              <f:for each="{errors}" as="error">
+                                <li>{error.code}: {error}</li>
+                              </f:for>
+                              </ul>
+                            </li>
+                          </f:for>
+                        </ul>
+                      </f:if>
+                    </f:form.validationResults>
+                        <h3><f:translate key="blackboards.new_header"/></h3>
+                        <f:form method="post" action="create" name="blackboard" id="blackboardForm"
+                              object="{blackboard}" enctype="multipart/form-data">
+                              <f:form.textfield placeholder="{f:translate(key: 'blackboards.title-placeholder', default: 'title')}" required="true" property="title"></f:form.textfield>
+                              <f:form.select required="true" property="category" options="{categories}" optionValueField="uid" optionLabelField="title" />
+                              <f:form.textarea required="true" placeholder="{f:translate(key: 'blackboards.description-placeholder', default: 'description')}" property="description" rows="8" cols="46"></f:form.textarea>
+                              <f:form.textfield placeholder="{f:translate(key: 'blackboards.telephone-placeholder', default: 'Telephone')}"  type="number" property="phoneNumber"></f:form.textfield>
+                              
+                              <div class="file-area">
+                                    <div class="file-dummy">
+                                          <h:form.upload property="image" id="file">
+                                                <div id="imagePreview">
+                                                  <img src="/typo3conf/ext/wills_ideas/Resources/Public/Icons/icon-image-upload.svg" width="65" height="65" />
+                                                </div>
+                                          </h:form.upload>
+                                          <span class="default">
+                                              <f:translate key="blackboards.input_image_description"/>
+                                          </span>
+                                          <span class="success">
+                                                <f:translate key="blackboards.input_image_selected_success"/>
+                                          </span>
+                                    </div>
+                              </div>
+                              <div style="text-align: center;">
+                                    <f:form.submit class="btn btn-primary" id="submitBlackboard" value="{f:translate(key: 'blackboards.submit_button', default: 'Absenden')}"></f:form.submit>
+                              </div>
+                        </f:form>
+                  </div>
+		</div>
+      </section>
+</html>

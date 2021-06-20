@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2021-01-28UTC00:32:260">
+        <header>
+            <authorName>Victor Willhuber</authorName>
+            <authorEmail>victorwillhuber@gmail.com</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="backend_layout.default">
+                <source>Default</source>
+                <target>Default</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+                <target>Normal</target>
+            </trans-unit>
+            <trans-unit id="settings.wills_blackboards.category_label">
+                <source>Select the parent category for the blackboards</source>
+                <target>Wählen Sie die übergeordnete Kategorie für die Blackboards aus</target>
+            </trans-unit>
+            <trans-unit id="settings.wills_blackboards.sheettitle">
+                <source>Blackboards plugin configuration</source>
+                <target>Blackboards plugin einstellungen
+            </trans-unit>
+            <trans-unit id="settings.wills_blackboards.task_label">
+                <source>Amount of days until the blackboards get archivated</source>
+                <target>Anzahl der Tage, bis die Blackboards archiviert werden</target>
+            </trans-unit>
+            <trans-unit id="settings.wills_blackboards.view_page_uid_label">
+                <source>Select the page that holds the Blackboards Show view</source>
+                <target>Wählen Sie die Seite aus, auf der sich die Ansicht Blackboards Show befindet</target>
+            </trans-unit>
+            <trans-unit id="settings.wills_blackboards.new_page_uid_label">
+                <source>Select the page that holds the Blackboards New view</source>
+                <target>Wählen Sie die Seite aus, auf der sich die Ansicht "Blackboards New" befindet</target>
+            </trans-unit>
+            <trans-unit id="settings.wills_blackboards.list_page_uid_label">
+                <source>Select the page that holds the Blackboards List view</source>
+                <target>Wählen Sie die Seite aus, auf der sich die Blackboards-Listenansicht befindet</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,11 @@
+##############
+#### PAGE ####
+##############
+page = PAGE
+page {
+    includeJSFooter {
+        BlackboardMainScript = EXT:wills_blackboards/Resources/Public/JavaScript/blackboard_main.js
+    }
+    includeCSS {
+    }
+}

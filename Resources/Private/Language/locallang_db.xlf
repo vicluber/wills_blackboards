@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2021-01-28UTC00:32:260">
+        <header>
+            <authorName>Victor Willhuber</authorName>
+            <authorEmail>victorwillhuber@gmail.com</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="extension.title">
+				<source>Wills Blackboards</source>
+			</trans-unit>
+            <trans-unit id="hk_blackboards_blackboard">
+                <source>Blackboard</source>
+            </trans-unit>
+            <trans-unit id="hk_blackboards_blackboard.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="hk_blackboards_blackboard.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="hk_blackboards_blackboard.category">
+                <source>Category</source>
+            </trans-unit>
+            <trans-unit id="hk_blackboards_blackboard.status">
+                <source>Status</source>
+            </trans-unit>
+            <trans-unit id="hk_blackboards_blackboard.submited">
+                <source>eingebracht</source>
+            </trans-unit>
+            <trans-unit id="hk_blackboards_blackboard.progress">
+                <source>in Umsetzung</source>
+            </trans-unit>
+            <trans-unit id="hk_blackboards_blackboard.finished">
+                <source>abgeschlossen</source>
+            </trans-unit>
+            <trans-unit id="hk_blackboards_blackboard.user">
+                <source>User</source>
+            </trans-unit>
+            <trans-unit id="hk_blackboards_blackboard.phone_number">
+                <source>Phone numberser</source>
+            </trans-unit>
+            <trans-unit id="hk_blackboards_blackboard.visible">
+                <source>Visible?</source>
+            </trans-unit>
+            <trans-unit id="hk_blackboards_comment">
+                <source>Comments</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

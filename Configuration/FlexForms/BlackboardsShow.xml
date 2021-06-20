@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:wills_blackboards/Resources/Private/Language/locallang_be.xlf:settings.wills_blackboards.sheettitle</sheetTitle>
+                </TCEforms>
+                <el>
+                    <!-- Page with the Show plugin -->
+                    <settings.blackboardsUidViewPage>
+                        <TCEforms>
+                            <label>LLL:EXT:wills_blackboards/Resources/Private/Language/locallang_be.xlf:settings.wills_blackboards.view_page_uid_label</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <minitems>0</minitems>
+                                <maxitems>1</maxitems>
+                                <show_thumbs>1</show_thumbs>
+                            </config>
+                        </TCEforms>
+                    </settings.blackboardsUidViewPage>
+
+                    <!-- Page with the New plugin -->
+                    <settings.blackboardsUidNewPage>
+                        <TCEforms>
+                            <label>LLL:EXT:wills_blackboards/Resources/Private/Language/locallang_be.xlf:settings.wills_blackboards.new_page_uid_label</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <minitems>0</minitems>
+                                <maxitems>1</maxitems>
+                                <show_thumbs>1</show_thumbs>
+                            </config>
+                        </TCEforms>
+                    </settings.blackboardsUidNewPage>
+
+                    <!-- Page with the List plugin -->
+                    <settings.blackboardsUidListPage>
+                        <TCEforms>
+                            <label>LLL:EXT:wills_blackboards/Resources/Private/Language/locallang_be.xlf:settings.wills_blackboards.list_page_uid_label</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <minitems>0</minitems>
+                                <maxitems>1</maxitems>
+                                <show_thumbs>1</show_thumbs>
+                            </config>
+                        </TCEforms>
+                    </settings.blackboardsUidListPage>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

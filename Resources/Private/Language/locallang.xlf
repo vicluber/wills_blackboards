@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2021-01-28UTC00:32:260">
+        <header>
+            <authorName>Victor Willhuber</authorName>
+            <authorEmail>victorwillhuber@gmail.com</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="blackboards.input_image_description">
+                <source>Select or drop an image format file here</source>
+            </trans-unit>
+            <trans-unit id="blackboards.input_image_selected_success">
+                <source>File selected</source>
+            </trans-unit>
+            <trans-unit id="blackboards.input_image_params">
+                <source>(less than 2MB)</source>
+            </trans-unit>
+            <trans-unit id="blackboards.delete_comment_confirm">
+                <source>You want to delete this comment?</source>
+            </trans-unit>
+            <trans-unit id="blackboards.delete_blackboard_confirm">
+                <source>You want to delete this blackboard?</source>
+            </trans-unit>
+            <trans-unit id="blackboards.title-placeholder">
+                <source>Title*</source>
+            </trans-unit>
+            <trans-unit id="blackboards.description-placeholder">
+                <source>Description*</source>
+            </trans-unit>
+            <trans-unit id="blackboards.telephone-placeholder">
+                <source>Telephone</source>
+            </trans-unit>
+            <trans-unit id="blackboards.edit">
+                <source>Edit</source>
+            </trans-unit>
+            <trans-unit id="blackboards.delete">
+                <source>Delete</source>
+            </trans-unit>
+            <trans-unit id="blackboards.show">
+                <source>read more</source>
+            </trans-unit>
+            <trans-unit id="blackboards.comments_header">
+                <source>comment article</source>
+            </trans-unit>
+            <trans-unit id="blackboards.comments_input_name">
+                <source>Comment</source>
+            </trans-unit>
+            <trans-unit id="blackboards.category_header">
+                <source>Category</source>
+            </trans-unit>
+            <trans-unit id="blackboards.new_header">
+                <source>Create article</source>
+            </trans-unit>
+            <trans-unit id="blackboards.edit_header">
+                <source>Edit Blackboard</source>
+            </trans-unit>
+            <trans-unit id="blackboards.edit_image_header">
+                <source>Edit Blackboard image</source>
+            </trans-unit>
+            <trans-unit id="blackboards.create_button">
+                <source>write article</source>
+            </trans-unit>
+            <trans-unit id="blackboards.submit_button">
+                <source>Submit</source>
+            </trans-unit>
+            <trans-unit id="comments.created_by">
+                <source>Comment from</source>
+            </trans-unit>
+            <trans-unit id="blackboards.category_all">
+                <source>All</source>
+            </trans-unit>
+            <trans-unit id="blackboards.succes-message">
+                <source>Ihr Beitrag wurde erfolgreich eingereicht</source>
+            </trans-unit>
+            <trans-unit id="blackboards.view_contact_link">
+                <source>Kontakt aufnehmen</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

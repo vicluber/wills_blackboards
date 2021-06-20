@@ -1,0 +1,63 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+		<section id="section-main-upper">
+            <div class="row">
+                <div class="center-wrapper blackboards-title">
+                    <h1>{contentObjectData.header}</h1>
+                    <p>{contentObjectData.subheader}<br /><br /></p>
+                    <div>
+                        <f:link.action class="btn btn-primary" action="new" controller="Blackboards" extensionName="WillsBlackboards" pluginName="BlackboardsNew" pageUid="{settings.blackboardsUidNewPage}">
+                            <f:translate key="blackboards.create_button"/>
+                        </f:link.action>
+                    </div>
+                </div>
+            </div>
+			<div class="row {f:if(condition:contentObjectData.layout,then:'row--bread')} categories-title">
+                <f:flashMessages />
+                <div class="row {f:if(condition:contentObjectData.layout,then:'row--bread')}">
+                    <div class="center-wrapper">
+                        <div class="news--category-menu">
+                            <ul>
+                                <f:if condition="({currentCategory} == 'all')">
+                                    <f:then>
+                                        <li>
+                                            <f:link.action action="list" class="active"><f:translate key="blackboards.category_all" /></f:link.action>
+                                        </li>
+                                    </f:then>
+                                    <f:else>
+                                        <li>
+                                            <f:link.action action="list"><f:translate key="blackboards.category_all" /></f:link.action>
+                                        </li>
+                                    </f:else>
+                                </f:if>
+                                <f:for each="{categories}" as="category">
+                                    <f:if condition="({currentCategory} == {category.title})">
+                                        <f:then>
+                                            <li>
+                                                <f:link.action action="list" class="active" arguments="{category: category}">{category.title}</f:link.action>
+                                            </li>
+                                        </f:then>
+                                        <f:else>
+                                            <li>
+                                                <f:link.action action="list" arguments="{category: category}">{category.title}</f:link.action>
+                                            </li>
+                                        </f:else>
+                                    </f:if>
+                                    
+                                </f:for>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+				<div class="center-wrapper">
+                    <div class="news--list">
+                        <f:widget.paginate objects="{blackboardsList}" as="paginatedBlackboards" configuration="{itemsPerPage: 10, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
+                        <f:for each="{paginatedBlackboards}" as="blackboard">
+                            <f:render partial="Blackboard/ListItem" arguments="{blackboard: blackboard}"/>
+                        </f:for>
+                    </div>
+				</div>
+                </f:widget.paginate>
+			</div>
+		</section>
+</html>

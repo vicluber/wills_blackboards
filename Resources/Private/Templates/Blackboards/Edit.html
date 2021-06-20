@@ -1,0 +1,54 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+{namespace h=Wills\WillsBlackboards\ViewHelpers}
+<section id="section-main-upper">
+      <div class="row">
+            <div class="center-wrapper blackboards-title">
+                  <h1>{contentObjectData.header}</h1>
+                  <p>{contentObjectData.subheader}<br /><br /></p>
+            </div>
+      </div>
+      <div class="row {f:if(condition:contentObjectData.layout,then:'row--bread')} row--small frame frame-default frame-type-form_formframework frame-layout-0">
+            <div class="center-wrapper">
+                  <h3><f:translate key="blackboards.edit_header"/></h3>
+                  <f:form method="post" action="update" name="blackboard" id="blackboardForm" object="{blackboard}"
+                        enctype="multipart/form-data">
+                        <f:form.textfield required="true" property="title"></f:form.textfield>
+                        <f:if condition="{blackboard.image.uid}">
+                              <f:form.hidden name="fileReferenceUid" value="{blackboard.image.uid}" />
+                        </f:if>
+                        <f:form.select required="true" property="category" options="{categories}" optionValueField="uid"
+                              optionLabelField="title" />
+                        <f:form.textarea required="true" property="description" rows="8" cols="46"></f:form.textarea>
+                        <f:form.textfield type="number" property="phoneNumber"></f:form.textfield>
+                        <div class="file-area bb-edit-image">
+                              <div class="file-dummy">
+                                    <h:form.upload property="image" id="file">
+                                          <f:if condition="{resource}">
+                                                <f:then>
+                                                      <div id="imagePreview">
+                                                            <f:image image="{resource}" width="200px" height="auto"/>
+                                                      </div>
+                                                </f:then>
+                                                <f:else>
+                                                      <div id="imagePreview"></div>
+                                                </f:else>
+                                          </f:if>
+                                    </h:form.upload>
+                                    <span class="default">
+                                          <f:translate key="blackboards.input_image_description"/>
+                                    </span>
+                                    <span class="success">
+                                          <f:translate key="blackboards.input_image_selected_success"/>
+                                    </span>
+                              </div>
+                        </div>
+                        <div style="text-align: center;">
+                              <f:form.submit class="btn btn-primary" id="submitBlackboard"
+                                    value="{f:translate(key: 'blackboards.submit_button', default: 'Absenden')}"></f:form.submit>
+                        </div>
+                  </f:form>
+            </div>
+      </div>
+</section>
+
+</html>
